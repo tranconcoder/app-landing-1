@@ -1,0 +1,9 @@
+.customer-illustration {
+	@include size(50vw, false);
+	@include flex(row, center, flex-end);
+
+	img {
+		@include size(824px, false);
+		@include maxSize(50vw, false);
+	}
+}

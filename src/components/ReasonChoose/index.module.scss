@@ -1,0 +1,12 @@
+.reason-choose {
+	> .separate {
+		@include size(100vw, 2px);
+		background-color: #e5e6e5;
+		margin-top: 70px;
+	}
+
+	> .container {
+		@include flex(column, center);
+		margin: 140px auto 0;
+	}
+}

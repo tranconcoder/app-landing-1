@@ -1,0 +1,5 @@
+.ultimate-features {
+	.container {
+		@include flex(row, center, space-between);
+	}
+}

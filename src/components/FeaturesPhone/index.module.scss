@@ -1,0 +1,15 @@
+.features-phone {
+	@include position(relative);
+	display: inline-block;
+
+	.phone {
+		@include size(576px, false);
+		@include position(relative);
+		z-index: 1;
+	}
+
+	.background {
+		@include size(610px, false);
+		@include position(absolute, 196px, -15px);
+	}
+}

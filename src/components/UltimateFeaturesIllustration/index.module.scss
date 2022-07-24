@@ -1,0 +1,8 @@
+.ultimate-features-illustration {
+	flex-shrink: 0;
+
+	img {
+		@include size(false, 820px);
+		transform: translateX(-50px);
+	}
+}

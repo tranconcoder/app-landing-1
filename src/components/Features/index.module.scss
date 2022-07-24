@@ -1,0 +1,5 @@
+.features {
+	> .container {
+		@include flex(row, flex-start, center);
+	}
+}

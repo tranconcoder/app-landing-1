@@ -1,0 +1,8 @@
+.advantage {
+	margin-top: 140px;
+
+	> .container {
+		@include size(1040px, false);
+		margin-inline: auto;
+	}
+}

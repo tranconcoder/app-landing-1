@@ -1,0 +1,32 @@
+.reason-choose-list-container {
+	padding: 100px 90px 180px;
+
+	.reason-choose-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 90px;
+
+		li {
+			@include flex(column, center);
+			text-align: center;
+
+			img {
+				@include size(88px);
+			}
+
+			h4 {
+				color: var(--title-color);
+				font-size: 20px;
+				font-weight: 700;
+				margin-top: 36px;
+			}
+
+			p {
+				color: var(--text-color);
+				font-size: 16px;
+				margin-top: 24px;
+			}
+		}
+	}
+}

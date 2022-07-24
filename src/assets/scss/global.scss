@@ -1,0 +1,4 @@
+section > div[data-container] {
+	@include size(var(--container-width), false);
+	margin-inline: auto;
+}

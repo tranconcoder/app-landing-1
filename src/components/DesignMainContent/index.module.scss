@@ -1,0 +1,17 @@
+.design-main-content {
+	@include size(420px, false);
+	margin-left: 70px;
+
+	> h3 {
+		@include titleStyle();
+	}
+
+	> p {
+		@include textStyle();
+		margin-top: 30px;
+	}
+
+	> button {
+		margin-top: 40px;
+	}
+}

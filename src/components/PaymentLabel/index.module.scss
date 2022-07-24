@@ -1,0 +1,12 @@
+.payment-label {
+	text-align: center;
+
+	> h3 {
+		@include titleStyle();
+	}
+
+	> p {
+		@include textStyle();
+		margin-top: 30px;
+	}
+}

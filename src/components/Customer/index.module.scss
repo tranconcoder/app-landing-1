@@ -1,0 +1,8 @@
+.customer {
+	margin-top: 140px;
+
+	> .container {
+		@include flex();
+		margin-inline: auto;
+	}
+}

@@ -1,0 +1,14 @@
+.payment {
+	margin-top: 170px;
+
+	.container {
+		@include size(740px, false);
+		@include flex(column, center);
+	}
+
+	.separate {
+		@include size(100vw, 2px);
+		background: #e5e6e5;
+		margin-top: 100px;
+	}
+}

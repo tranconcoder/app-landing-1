@@ -1,0 +1,7 @@
+.design {
+	margin-top: 110px;
+
+	> .container {
+		@include flex(row, center, center);
+	}
+}

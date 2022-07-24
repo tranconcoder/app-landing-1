@@ -1,0 +1,23 @@
+.advantage-desc {
+	@include flex(row, center);
+
+	.title {
+		@include size(490px, false);
+		color: var(--title-color);
+		line-height: 1.3;
+		font-size: 40px;
+		font-weight: 700;
+	}
+
+	.separate {
+		@include size(2px, 150px);
+		background-color: rgba(#4b4a48, 0.39);
+		margin-inline: 75px 50px;
+	}
+
+	.desc {
+		@include size(420px, false);
+		color: var(--text-color);
+		font-size: 16px;
+	}
+}

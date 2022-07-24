@@ -1,0 +1,40 @@
+.advantage-list-container {
+	margin-top: 110px;
+
+	.advantage-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 120px;
+
+		li {
+			&.payout h4 {
+				color: #f55767;
+			}
+
+			&.network h4 {
+				color: #2563ff;
+			}
+
+			&.rewards h4 {
+				color: #40975f;
+			}
+
+			img {
+				@include size(88px);
+			}
+
+			h4 {
+				font-size: 20px;
+				font-weight: 700;
+				margin-top: 30px;
+			}
+
+			p {
+				color: var(--text-color);
+				line-height: 1.5;
+				font-size: 16px;
+				margin-top: 16px;
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.features-content {
+	@include size(440px, false);
+	margin-left: 40px;
+
+	> .title {
+		color: var(--title-color);
+		line-height: 1.2;
+		font-size: 36px;
+		font-weight: 600;
+	}
+
+	> .description {
+		color: var(--text-color);
+		font-size: 16px;
+		margin-top: 16px;
+		line-height: 1.6;
+	}
+
+	.feature-list {
+		margin-top: 90px;
+
+		li {
+			@include flex(row, center, space-between);
+
+			&:not(:first-child) {
+				margin-top: 66px;
+			}
+
+			img {
+				@include size(90px);
+			}
+
+			div {
+				margin-left: 32px;
+
+				h4 {
+					color: #f55767;
+					font-size: 20px;
+					font-weight: 700;
+				}
+
+				p {
+					color: var(--text-color);
+					font-size: 16px;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}

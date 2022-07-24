@@ -1,0 +1,47 @@
+.ultimate-features-content {
+	@include size(680px, false);
+	flex-shrink: 0;
+	margin-left: 46px;
+
+	.description-container {
+		h3 {
+			@include titleStyle();
+		}
+
+		p {
+			@include textStyle();
+			margin-top: 30px;
+		}
+	}
+
+	.features-list-container {
+		margin-top: 60px;
+
+		.features-list {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			gap: 60px 90px;
+
+			li {
+				img {
+					@include size(88px);
+				}
+
+				h4 {
+					@include titleStyle(20px);
+					margin-top: 20px;
+				}
+
+				p {
+					@include textStyle(16px, 1.5);
+					margin-top: 12px;
+				}
+			}
+		}
+	}
+
+	.see-all-button {
+		margin-top: 55px;
+	}
+}

@@ -1,0 +1,40 @@
+@import '../../assets/scss/package.scss';
+
+.header {
+	.container {
+		@include size(var(--container-width), var(--header-height));
+		@include maxSize(100%, false);
+		@include flex(row, center, space-between);
+		margin-inline: auto;
+		padding-block: 94px 10px;
+		box-sizing: content-box;
+
+		.company-name {
+			font-size: 30px;
+			font-weight: bold;
+
+			> span:nth-child(1) {
+				color: #fcae61;
+			}
+
+			> span:nth-child(2) {
+				color: var(--title-color);
+			}
+		}
+
+		.nav-container {
+			margin-inline: auto 5px;
+
+			.nav-list {
+				@include flex();
+
+				li {
+					font-size: 16px;
+					font-weight: 500;
+					color: var(--title-color);
+					margin-right: 40px;
+				}
+			}
+		}
+	}
+}
