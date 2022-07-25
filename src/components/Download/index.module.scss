@@ -1,0 +1,6 @@
+.download {
+	> .container {
+		@include flex(row, flex-end, center);
+		margin-inline: auto;
+	}
+}

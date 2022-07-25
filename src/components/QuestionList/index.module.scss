@@ -1,0 +1,39 @@
+.question-list-container {
+	margin-top: 65px;
+
+	.question-list {
+		li {
+			@include position(relative);
+			background: #f5f7fa;
+			padding: 20px 40px;
+
+			&:not(:first-child) {
+				margin-top: 10px;
+			}
+
+			&.active {
+				padding: 40px 70px 40px 40px;
+			}
+
+			> h4 {
+				@include titleStyle(20px);
+				font-weight: 600;
+			}
+
+			> p {
+				@include textStyle();
+				margin-top: 35px;
+			}
+
+			> svg {
+				@include size(20px);
+				@include position(absolute, 50%, 40px);
+				transform: translateY(-50%);
+
+				path {
+					fill: #242f51;
+				}
+			}
+		}
+	}
+}

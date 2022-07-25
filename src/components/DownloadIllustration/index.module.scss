@@ -1,0 +1,9 @@
+.download-illustration {
+	@include size(45vw, false);
+
+	img {
+		@include size(740px, false);
+		@include maxSize(45vw, false);
+		transform: translateY(14%);
+	}
+}

@@ -1,0 +1,12 @@
+.question-label {
+	text-align: center;
+
+	h3 {
+		@include titleStyle(40px);
+	}
+
+	p {
+		@include textStyle();
+		margin-top: 30px;
+	}
+}

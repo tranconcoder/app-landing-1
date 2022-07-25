@@ -13,29 +13,26 @@ import ReasonChoose from './components/ReasonChoose';
 import UltimateFeatures from './components/UltimateFeatures';
 import Payment from './components/Payment';
 import Customer from './components/Customer';
+import Question from './components/Question';
+import Download from './components/Download';
+import Footer from './components/Footer';
 
 function App() {
 	return (
 		<div className="app-container">
 			<Header />
-
 			<Banner />
-
 			<Company />
-
 			<Features />
-
 			<Advantage />
-
 			<Design />
-
 			<ReasonChoose />
-
 			<UltimateFeatures />
-
 			<Payment />
-
 			<Customer />
+			<Question />
+			<Download />
+			<Footer />
 		</div>
 	);
 }

@@ -1,0 +1,11 @@
+.footer {
+	@include flex(column, center);
+	padding-block: 120px;
+	background: #09142e;
+
+	.copyright {
+		@include textStyle(14px);
+		color: rgba(#fff, 0.21);
+		margin-top: 80px;
+	}
+}

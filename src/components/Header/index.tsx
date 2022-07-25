@@ -3,6 +3,7 @@ import { useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './index.module.scss';
 import Button from '../Button';
+import Logo from '../Logo';
 
 const cx = classNames.bind(styles);
 
@@ -10,10 +11,7 @@ function Header() {
 	return (
 		<header className={cx('header')}>
 			<div className={cx('container')}>
-				<span className={cx('company-name')}>
-					<span>App</span>
-					<span>Lab</span>
-				</span>
+				<Logo />
 
 				<div className={cx('nav-container')}>
 					<ul className={cx('nav-list')}>
@@ -24,7 +22,6 @@ function Header() {
 						<li>FAQ</li>
 					</ul>
 				</div>
-
 				<Button width={170} height={60}>
 					Try for free
 				</Button>

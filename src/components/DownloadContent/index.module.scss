@@ -1,0 +1,37 @@
+.download-content {
+	@include size(55vw, false);
+	@include flex(row, center, flex-end);
+	margin-top: 100px;
+	margin-left: 20px;
+
+	.content-container {
+		@include size(700px, 425px);
+
+		h3 {
+			@include titleStyle(48px);
+		}
+
+		p {
+			@include textStyle();
+			margin-top: 30px;
+		}
+
+		.download-links {
+			@include flex(row, center);
+			margin-top: 50px;
+
+			.google-play,
+			.app-store {
+				text-decoration: none;
+
+				img {
+					@include size(185px, 55px);
+				}
+			}
+
+			.app-store {
+				margin-left: 32px;
+			}
+		}
+	}
+}

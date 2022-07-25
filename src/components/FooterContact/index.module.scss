@@ -1,0 +1,40 @@
+.footer-contact {
+	margin-top: 52px;
+
+	&__list {
+		@include flex(row, center);
+
+		li {
+			&:not(:first-child) {
+				margin-left: 20px;
+			}
+
+			&.facebook {
+				svg {
+					@include size(false, 30px);
+				}
+			}
+
+			&.twitter {
+				svg {
+					@include size(false, 30px);
+				}
+			}
+
+			&.github {
+				svg {
+					@include size(30px);
+					background-color: rgba(#fff, 0.25);
+					padding: 4px;
+					border-radius: 4px;
+				}
+			}
+
+			svg {
+				path {
+					fill: #273043;
+				}
+			}
+		}
+	}
+}

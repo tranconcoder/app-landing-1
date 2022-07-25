@@ -1,3 +1,93 @@
-.customer-content-box {
+.customer-content-box-wrapper {
 	@include size(50vw, false);
+
+	.customer-content-box {
+		@include size(560px, false);
+
+		.main-title {
+			@include titleStyle(40px);
+		}
+
+		.main-description {
+			@include textStyle();
+			margin-top: 30px;
+		}
+
+		.star {
+			@include size(false, 20px);
+			margin-top: 44px;
+		}
+
+		.title {
+			@include titleStyle(20px);
+			margin-top: 30px;
+		}
+
+		.description {
+			@include textStyle();
+			margin-top: 33px;
+		}
+
+		.customer {
+			@include flex(row, center, space-between);
+			margin-top: 50px;
+
+			.customer-avatar {
+				@include size(90px);
+			}
+
+			.customer-info {
+				flex: 1;
+				padding-left: 30px;
+
+				.name {
+					@include titleStyle(18px);
+				}
+
+				.position {
+					@include textStyle(18px);
+					margin-top: 8px;
+				}
+			}
+
+			.action-container {
+				@include flex(row, center);
+
+				.previous-button,
+				.next-button {
+					@include size(50px);
+					@include flexCenter();
+					border-radius: 50%;
+					border: 2px solid #eff3f8;
+					background-color: var(--white-color);
+
+					&.active {
+						background-color: #eff3f8;
+
+						svg path {
+							fill: #2500f9;
+						}
+					}
+
+					svg {
+						@include size(15px);
+
+						path {
+							fill: #dee1e6;
+						}
+					}
+				}
+
+				.previous-button svg {
+					transform: rotate(180deg);
+				}
+
+				.separate {
+					@include size(1px, 25px);
+					background-color: #e7e7e7;
+					margin-inline: 10px;
+				}
+			}
+		}
+	}
 }

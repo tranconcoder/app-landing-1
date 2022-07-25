@@ -1,0 +1,18 @@
+.footer-links {
+	margin-top: 50px;
+
+	.link-list {
+		@include flex(row, center);
+
+		li {
+			&:not(:first-child) {
+				margin-left: 40px;
+			}
+
+			a {
+				color: var(--white-color);
+				text-decoration: none;
+			}
+		}
+	}
+}
